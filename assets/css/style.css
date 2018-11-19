@@ -1,0 +1,240 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-outline {
+  color: #fff;
+  border: 1px solid;
+  border-color: #fff;
+}
+
+.btn-primary {
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #007bff;
+}
+
+.btn-outline:hover, 
+.btn-outline:focus, 
+.btn-outline:active, 
+.btn-outline .active {
+  color: #000;
+  border-color: #fff;
+  background-color: #fff;
+}
+
+.btn {
+  border-radius: 300px;
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+}
+
+.btn-xl {
+    font-size: 12px;
+    padding: 11px 36px;
+    padding-bottom: 13px;
+    padding-right: 40px;
+    margin-top: 3%;
+}
+
+::-moz-selection {
+  background: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #fff;
+  text-shadow: none;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+.mlr{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/*//default navbar//*/
+.logo {
+  border-radius: 0px 125px 125px 0px;
+  width: 44%;
+}
+
+#mainNav {
+}
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  right: 0;
+  padding: 13px;
+  text-transform: uppercase;
+  color: white;
+  border: 0;
+  background-color: #37679a33;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#mainNav .navbar-brand {
+  width: 30%;
+  margin-left: -24px;
+  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#mainNav .navbar-brand.active, 
+#mainNav .navbar-brand:active, 
+#mainNav .navbar-brand:focus, 
+#mainNav .navbar-brand:hover {
+  color: #000;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 90%;
+  font-weight: 400;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  color: white;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, 
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #000;
+}
+
+@media only screen and (max-width: 992px){
+  .navbar-collapse{
+    background: rgb(59,103,158);
+    background: -moz-linear-gradient(left, rgba(59,103,158,1) 0%, rgba(43,136,217,1) 0%, rgba(43,136,217,1) 0%, rgba(43,136,217,1) 0%, rgba(32,124,202,1) 35%, rgba(32,124,202,1) 68%, rgba(43,136,217,1) 85%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 0%,rgba(43,136,217,1) 0%,rgba(43,136,217,1) 0%,rgba(32,124,202,1) 35%,rgba(32,124,202,1) 68%,rgba(43,136,217,1) 85%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 0%,rgba(43,136,217,1) 0%,rgba(43,136,217,1) 0%,rgba(32,124,202,1) 35%,rgba(32,124,202,1) 68%,rgba(43,136,217,1) 85%,rgba(125,185,232,1) 100%);
+  z-index: 9;
+  border: 0.5px solid #fff;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.36);
+}
+
+.nav-item{
+    padding-left: 10px;
+}
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    border: none;
+  }
+
+  #mainNav .navbar-brand {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: 1.75em;
+    width: 30%;
+  }
+
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+
+  }
+
+  #mainNav.navbar-solid {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #5499d8;
+  }
+
+  #mainNav.navbar-solid .navbar-brand {
+    font-size: 1.25em;
+    padding: 12px 0;
+  }
+}
+
+/* Solid class attached on scroll past first section */
+.navbar.solid {
+  transition:background-color 1s ease 0s;
+  background-color:#5499d8;
+  height: 60px;
+}
+/* Solid class attached on scroll past first section */
+/*//default navbar//*/
+.banner{
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color:#000;
+  position: relative;
+  background-image: url("../image/bg.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+.slider{
+  overflow: hidden;
+}
+
+footer{
+  background-color:  #101010;
+  padding-top: 50px;
+  padding-bottom: 5px;
+  }
+
+  .footerleft{
+    float: left;
+  }
+  
+  .footerleft a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .footerleft p{
+    color: #9C9C9C;
+  }
+
+
+  .copyright{
+    padding-top: 2px;
+  }
+
+  .footerright{
+   float: left;
+  }
+
+  .footerright img{
+    padding-bottom: 15px;
+  }
+
+  .footerright p{
+    padding-bottom: 10px;
+    word-spacing: 30px;
+    color: #9C9C9C;
+    padding-bottom: 10px;
+  }
+
+ .f_s-cial ul{
+   margin: 0;
+   padding:0;
+
+ }
+
+ .f_s-cial ul li {
+  list-style: none;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.f_s-cial ul li a{
+  color: #9C9C9C;
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-size: 20px;
+} 
